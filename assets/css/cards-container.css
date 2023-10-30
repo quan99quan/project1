@@ -1,0 +1,206 @@
+#content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%; /* Bắt đầu từ bên phải */
+    transition: left 0.5s ease-in-out; /* Thời gian và hiệu ứng chuyển động */
+
+}
+
+#content.show {
+    left: 70%; /* Khi class 'show' được thêm vào, di chuyển từ bên phải sang trái */
+    background-color: whitesmoke ;
+    z-index: 999;
+    display: flex;
+
+}
+#a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%; /* Bắt đầu từ bên phải */
+    transition: left 0.5s ease-in-out; /* Thời gian và hiệu ứng chuyển động */
+}
+
+#a.show {
+    left: 0; /* Khi class 'show' được thêm vào, di chuyển từ bên phải sang trái */
+    background-color:rgba(0,0,0) ;
+    opacity: 0.5;
+
+}
+.card-container--header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.card-container--header button{
+    background: rgb(255, 69, 69);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 10px;
+    /* border: 3px solid black; */
+    border-radius: 0.4em;
+    /* box-shadow: 0.1em 0.1em; */
+   
+   
+    margin-bottom: 10px;
+}
+.card-container--header button:hover{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+    
+}
+.card-container--header button:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+.card-container--footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+
+}
+.card-container--footer button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+}
+.card-container--footer button:hover{
+  background-color:    #2fb5338a;
+}
+
+.cartProductItem{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.cartItem{
+    display: flex;
+    gap: 20px;
+}
+.cartProductItem-info h4{
+   font-weight: 600;
+}
+.changeQuantity-button {
+    margin-top: 15px;
+}
+
+.material-symbols-outlined, .x{
+    cursor: pointer;
+}
+.cartProductItem-image{
+    margin-left: 10px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgb(255, 69, 69);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+    position: relative;
+  }
+  .fa-solid fa-trash {
+    width: 12px;
+    transition-duration: .3s;
+    
+  }
+
+  .button:hover {
+    width: 60px;
+    border-radius: 50px;
+    transition-duration: .3s;
+    background-color: rgb(255, 69, 69);
+    align-items: center;
+  }
+  .button:hover .fa-solid fa-trash {
+    width: 50px;
+    transition-duration: .3s;
+    transform: translatey(60%);
+    
+  }
+  /* .button::before {
+    position: absolute;
+    top: -20px;
+    content: "delete";
+    color: white;
+    transition-duration: .3s;
+    font-size: 2px;
+  }
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    transform: translatey(30px);
+    transition-duration: .3s;
+  } */
+
+  .container-ef{
+    display: flex;
+    justify-content: center;
+    max-width:1200px;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .text{
+    position: relative;
+    font-size: 1em;
+   
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .text span{
+    color: #fff;
+    mix-blend-mode: difference;
+  }
+  .text:before{
+    content:"";
+    position: absolute;
+    top:0;
+    width:60px;
+    height: 100%;
+    background: #000;
+    animation: thangcover 4s linear infinite;
+  }
+  @keyframes thangcover {
+    0%{
+      left: 0;
+    }
+    50%{
+      left: calc( 100% - 60px);
+    }
+    100%{
+      left:0;
+    }
+  }
+
+
+
+
+
+  

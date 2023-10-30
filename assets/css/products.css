@@ -1,0 +1,202 @@
+
+.card img{
+    width: 100px;
+    height: 100px;
+}
+
+.card .delete{
+    background: rgb(255, 69, 69);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 12px;
+   border-radius: 0.4em;
+   margin-bottom: 10px;
+}
+.card .delete:hover,.card .edit:hover,thead button:hover{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+    
+}
+.card .delete:active,.card .edit:active,thead button:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.card .edit{
+    background: rgb(255, 215, 69);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 12px;
+border-radius: 0.4em;
+    margin-bottom: 10px;
+}
+
+thead button{
+    background: rgb(69, 255, 72);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 12px;
+   border-radius: 0.4em;
+   margin-bottom: 10px;
+}
+
+.containAccount{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 14;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: .2s ease;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+/* edit table */
+.edit-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    
+  }
+  
+  .edit-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .edit-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .edit-form input[type="text"],
+  .edit-form input[type="email"],
+  .edit-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+  }
+  
+  .edit-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-form button:hover {
+    background-color: #45a049;
+  }
+
+
+  #close,#closeAdd{
+    width: 30px;
+    margin-left: 230px;
+    background-color: rgb(255, 69, 69);
+    height: 30px;
+    align-items: center;
+    display: flex;
+    border-radius: 0.4em;
+  }
+  #close:hover,#closeAdd:hover{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+    
+}
+#close:active,#closeAdd:active{
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.user button:hover{
+background-color: rgb(69, 255, 72);
+font-family: inherit;
+
+font-weight: 900;
+
+border-radius: 0.4em;
+
+}
+
+/* add table */
+.containAccountProducts{
+  z-index: 14;
+font-family: 'Courier New', Courier, monospace;
+
+}
+.add-form {
+ 
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  
+  
+  
+}
+
+.add-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-form .form-group {
+  margin-bottom: 15px;
+}
+
+.add-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#add-name,#add-type,#add-quantity{
+  height: 28px;
+  width: 185px;
+}
+.add-form input[type="text"],
+.add-form input[type="email"],
+.add-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+.add-form button {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  background-color: #45a049;
+}

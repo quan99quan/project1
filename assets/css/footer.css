@@ -1,0 +1,32 @@
+/*footer*/
+footer{
+    display: flex;
+    background-color: #cccccc;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+column-gap: 150px;
+}
+.footer--right{
+    display: flex;
+gap: 50px;
+    line-height: 30px;
+}
+.footer--right h3{
+    font-weight: 600;
+}
+footer img{
+    width: 100px;
+    height: 80px;
+margin-bottom: 60px;
+    margin-top: 20px;
+}
+footer  i{
+margin-right: 20px;
+   font-size: 20px;
+    cursor: pointer;
+}
+.footer--right span{
+    font-weight: 600;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <!-- link -->
+<link rel="stylesheet" href="../css/toastMessage.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="login" method="POST">
+    <a href="./homepage.html"><img src="https://static.topcv.vn/company_logos/WWrxY3XeoTmiWJlVkHw7FN2C9h34ku8T_1647593804____5d51ada4e18f6f1b294b73cab1d778b8.png" alt="home" /></a>
+    <h2>Register</h2>
+    <form id="form-1">
+       <div class="form-group">
+        <label for="name">Username:</label>
+       <input type="text" id="name" name="name" placeholder="Enter username">
+       <span class="form-message"></span>
+       </div>
+       <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter a valid email">
+        <span class="form-message"></span>
+       </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <span class="form-message"></span>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter confirmPassword" >
+        <span class="form-message"></span>
+        </div>
+        <button type="submit"  id="register">Register</button>
+       <div style="margin-top: 20px;">
+        <p>Already have an account ? <a href="login.html" >Login</a></p>
+       </div>
+    </form>
+</div>
+<div id="toast"></div>
+<script src="../js/register.js"></script>
+<script src="../js/validator.js"></script>
+<script src="../js/toastMessage.js"></script>
+<script src="../js/global.js"></script>
+</body>
+</html>
